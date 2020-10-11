@@ -6,13 +6,13 @@ body {
   display: flex;
 }
 
-.flex-container > .nav {
+.nav {
   height: 100vh;
   width: 22vw;
   background-color: #d6efff;
 }
 
-.flex-container > .contentdiv {
+.contentdiv {
   height: 100vh;
   width: 78vw;
   background-color: #f0fff0;
@@ -124,7 +124,14 @@ i {
   li {
     margin: 0;
   }
+
   /* makes sure that the a tag will take the entire screen*/
+
+  .nav {
+    display: block;
+    width: 80vw;
+  }
+
   a {
     display: block;
   }

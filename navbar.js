@@ -5,6 +5,6 @@ $(document).ready(function () {
     } else {
       $("button").text("☰");
     }
-    $("li").toggle("slow");
+    // $("li").toggle("slow");
   });
 });
