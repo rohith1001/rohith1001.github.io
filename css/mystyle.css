@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > .nav {
+  height: 100vh;
+  width: 22vw;
+  background-color: #d6efff;
+}
+
+.flex-container > .contentdiv {
+  height: 100vh;
+  width: 78vw;
+  background-color: #f0fff0;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 3vh 0vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  height: 30%;
+  width: 40%;
+  border-radius: 100%;
+}
+
+button {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 1vw 2vw;
+  font-size: 3vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  display: block;
+}
+
+a:hover {
+  -webkit-animation: INDENT 2s 1; /* Safari 4+ */
+  -moz-animation: INDENT 2s 1; /* Fx 5+ */
+  -o-animation: INDENT 2s 1; /* Opera 12+ */
+  animation: INDENT 2s 1; /* IE 10+ */
+  color: blue;
+}
+
+a:active {
+  color: blue;
+}
+
+@-webkit-keyframes INDENT {
+  0% {
+    text-indent: 0;
+  }
+  50% {
+    text-indent: 5px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+@-moz-keyframes INDENT {
+  0% {
+    text-indent: 0;
+  }
+  50% {
+    text-indent: 5px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+@-o-keyframes INDENT {
+  0% {
+    text-indent: 0;
+  }
+  50% {
+    text-indent: 5px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+@keyframes INDENT {
+  0% {
+    text-indent: 0;
+  }
+  50% {
+    text-indent: 5px;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+i {
+  padding: 1vw 1vw;
+}
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul {
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  li {
+    margin: 0;
+  }
+  /* makes sure that the a tag will take the entire screen*/
+  a {
+    display: block;
+  }
+
+  button {
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #afe0ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  /* border-radius: 50%; */
+}
+
+h2 {
+  text-align: center;
+  font-size: 4vh;
+  font-family: monospace;
+  margin: 20vh 0;
+  color: grey;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3vh;
+  font-family: monospace;
+  color: pink;
+}
